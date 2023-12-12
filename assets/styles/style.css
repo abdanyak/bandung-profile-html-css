@@ -15,6 +15,7 @@ body {
 
     padding: 25px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 main{
@@ -106,7 +107,7 @@ aside {
 @media screen and (max-width: 1000px) {
     #content, aside {
     width: 100%;
-    padding: 0;
+    padding: 0; /*ini padding aside*/
 }
 }
 
