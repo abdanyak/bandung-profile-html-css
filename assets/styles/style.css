@@ -24,9 +24,6 @@ main{
     overflow: auto;
 }
 
-.headernav {
-   display: inline; 
-}
 
 .headerbg {
     font-size: 20px;
@@ -45,6 +42,7 @@ h2, h3 {
     max-height: 300px;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
 }
 
 nav {
