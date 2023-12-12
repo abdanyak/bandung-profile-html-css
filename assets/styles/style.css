@@ -86,7 +86,7 @@ nav a:hover{
 
 .tabletambahan {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     padding-bottom: 30px;
 }
