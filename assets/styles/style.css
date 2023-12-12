@@ -14,14 +14,15 @@ body {
     border-radius: 20px;
 
     padding: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
 main{
     margin: 10px;
     padding: 10px;
-    overflow: auto;
+    display: flex;
+    gap: 1.5rem;
 }
 
 
@@ -53,10 +54,14 @@ nav {
     top: 0;
 }
 
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
 nav li {
-    display: inline;
     list-style-type: none;
-    margin-right: 20px;
 }
 
 nav a {
@@ -72,7 +77,6 @@ nav a:hover{
 
 
 .profile header{
-
     text-align: center;
 }
 
@@ -92,25 +96,39 @@ nav a:hover{
 }
 
 #content {
-    float: left;
-    width: 75%;
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
 }
 
 aside {
-    float: right;
-    width: 25%;
-    padding-left: 20px;
+    flex: 1;
 }
 
-@media screen and (max-width: 1000px) {
-    #content, aside {
-    width: 100%;
-    padding: 0; /*ini padding aside*/
-}
-}
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+@media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
 
 footer {
-    padding: 20px;
+    padding: 10px;
     color: white;
     background-color: #00a2c6;
     text-align: center;
